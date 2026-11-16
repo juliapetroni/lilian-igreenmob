@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>iGreen Energia & Mobilidade</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#006837;
+    color:#fff;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-topo{
+    background:#00b050;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1593941707882-a5bac6861d75');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 10%;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:15px 30px;
+    background:#00b050;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn-secundario{
+    background:#0056b3;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h2{
+    color:#006837;
+    font-size:38px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f7f7f7;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#006837;
+    margin-bottom:15px;
+}
+
+.formulario{
+    background:#f4f7f8;
+    border-radius:20px;
+    padding:40px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.botao-form{
+    background:#00b050;
+    border:none;
+    color:white;
+    padding:15px;
+    width:100%;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.destaque{
+    background:#006837;
+    color:white;
+    text-align:center;
+}
+
+.destaque h2{
+    color:white;
+}
+
+.depoimentos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.depoimento{
+    background:white;
+    border-left:5px solid #00b050;
+    padding:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">iGreen</div>
+
+<nav>
+<ul>
+<li><a href="#energia">Economia</a></li>
+<li><a href="#eletropostos">Eletropostos</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+
+<a href="#cadastro" class="btn-topo">
+Quero Economizar
+</a>
+
+</header>
+
+<section class="hero">
+
+<h1>Economize até 10% na sua Conta de Luz</h1>
+
+<p>
+Conheça soluções de energia sustentável e
+oportunidades para empreender com eletropostos.
+</p>
+
+<a href="#cadastro" class="btn">
+Quero Receber Desconto
+</a>
+
+<a href="#eletropostos" class="btn btn-secundario">
+Quero Empreender
+</a>
+
+</section>
+
+<section id="energia">
+
+<div class="titulo">
+<h2>Economize na Conta de Energia</h2>
+<p>
+Reduza seus custos de forma simples e sustentável.
+</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Cadastro</h3>
+<p>Preencha seus dados rapidamente.</p>
+</div>
+
+<div class="card">
+<h3>2. Análise</h3>
+<p>Enviamos sua solicitação para avaliação.</p>
+</div>
+
+<div class="card">
+<h3>3. Economia</h3>
+<p>Comece a pagar menos na conta de energia.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="cadastro">
+
+<div class="titulo">
+<h2>Solicite sua Análise Gratuita</h2>
+</div>
+
+<div class="formulario">
+
+<form>
+
+<input type="text" placeholder="Nome Completo">
+
+<input type="tel" placeholder="WhatsApp">
+
+<input type="email" placeholder="E-mail">
+
+<input type="text" placeholder="Cidade">
+
+<input type="number" placeholder="Valor Médio da Conta">
+
+<select>
+<option>Tipo de Cliente</option>
+<option>Residencial</option>
+<option>Comercial</option>
+<option>Industrial</option>
+</select>
+
+<button class="botao-form">
+QUERO RECEBER MEU DESCONTO
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section id="eletropostos" class="destaque">
+
+<div class="titulo">
+<h2>Empreenda com Eletropostos</h2>
+</div>
+
+<p style="max-width:800px;margin:auto;">
+O mercado de mobilidade elétrica está crescendo.
+Conheça as oportunidades para investir e gerar
+novas fontes de receita.
+</p>
+
+<br><br>
+
+<div class="cards">
+
+<div class="card">
+<h3>Mercado em Crescimento</h3>
+<p>Mais veículos elétricos todos os anos.</p>
+</div>
+
+<div class="card">
+<h3>Baixo Investimento</h3>
+<p>Modelos acessíveis para iniciar.</p>
+</div>
+
+<div class="card">
+<h3>Receita Recorrente</h3>
+<p>Ganhos através das recargas.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<div class="titulo">
+<h2>Por que Escolher a iGreen?</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Economia</h3>
+<p>Redução de custos energéticos.</p>
+</div>
+
+<div class="card">
+<h3>Sustentabilidade</h3>
+<p>Energia limpa e eficiente.</p>
+</div>
+
+<div class="card">
+<h3>Inovação</h3>
+<p>Soluções tecnológicas modernas.</p>
+</div>
+
+<div class="card">
+<h3>Suporte</h3>
+<p>Atendimento especializado.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="titulo">
+<h2>Depoimentos</h2>
+</div>
+
+<div class="depoimentos">
+
+<div class="depoimento">
+⭐⭐⭐⭐⭐<br><br>
+Consegui reduzir minha conta de energia e o processo foi muito simples.
+</div>
+
+<div class="depoimento">
+⭐⭐⭐⭐⭐<br><br>
+Excelente oportunidade para conhecer o setor de mobilidade elétrica.
+</div>
+
+<div class="depoimento">
+⭐⭐⭐⭐⭐<br><br>
+Atendimento rápido e transparente.
+</div>
+
+</div>
+
+</section>
+
+<section id="contato" class="destaque">
+
+<h2>Fale Conosco</h2>
+
+<br>
+
+<p>WhatsApp: (21) 99999-9999</p>
+<p>E-mail: contato@seudominio.com</p>
+<p>Rio de Janeiro - RJ</p>
+
+<br>
+
+<a href="https://wa.me/5521999999999" class="btn">
+Falar no WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+<h3>iGreen Energia & Mobilidade</h3>
+
+<p>
+© 2026 Todos os direitos reservados.
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/5521999999999"
+class="whatsapp"
+target="_blank">
+WhatsApp
+</a>
+
+</body>
+</html>
